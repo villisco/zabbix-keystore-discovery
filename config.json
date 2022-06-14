@@ -1,0 +1,11 @@
+{
+        "keystore_discovery": {
+                "zabbix_sender": "/path/to/zabbix_sender",
+                "zabbix_confd": "/path/to/zabbix_agentd.conf",
+                "keytool": "/path/to/keytool",
+                "keystore_pass": "Leave empty string when no password. Use here None to simulate keystore -storepass \"\" usage",
+                "zbx_key_discovery": "jvm.keystore.discovery",
+                "zbx_key_startdate": "jvm.keystore.startdate",
+                "zbx_key_enddate": "jvm.keystore.enddate"
+        }
+}
