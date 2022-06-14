@@ -5,7 +5,7 @@ Only basic Python modules and zabbix_sender used.
 NB! 
 This script has been currently written for and tested with python2.7, but it should work with python3 also!
 
-##How it works?
+## How it works?
 * Script scans keystore for cert aliases.
 * Finds per alias cert dates for "valid from" and "valid until".
 * Generates json string from found aliases (for zabbix discovery).
@@ -20,7 +20,7 @@ PS.
 To simulate empty password for keystore (_-storepass ""_) write "None" as keystore_pass value in config.
 Leaving password empty in config ("") will not add -storepass to keytool execute.
 
-##Usage
+## Usage
 * run from linux command line:
 
     `python zabbix_discovery -k /path/to/keystore -c /path/to/config.json`
@@ -33,7 +33,7 @@ Leaving password empty in config ("") will not add -storepass to keytool execute
     15 06 * * *     /usr/bin/python /data/scripts/keystore_discovery.py -k /data/tomcat/keystore.jks -c /data/scripts/config.json > /dev/null 2>&1
     ```
   
-##Zabbix template setup
+## Zabbix template setup
 1. Create new template
    
     * _Zabbix -> Configuration -> Templates -> "Create template"_
